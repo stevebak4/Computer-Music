@@ -1,0 +1,30 @@
+#N canvas 1022 343 548 300 10;
+#X obj 201 180 record_analyse;
+#X obj 95 167 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 148 103 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 241 56 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X text 112 79 0->file/1->adc~;
+#X text 201 34 standard diviation;
+#X obj 313 105 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 389 167 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 302 148 start recording from files;
+#X text 7 8 the .wav files that will be recorded are inserted inside
+a directory calle ./extracted;
+#X text 344 6 the pd abstraction outputs two text files sounds.txt
+and characteristics.txt;
+#X text 283 67 start procces manually before max_wavs are recorded
+;
+#X text 118 215 the following are set inside record_analyse.pd max_wavs
+= 50 thresh_defeult = 65 (depends on the microphone) max wav size =
+10 seconds;
+#X text 10 148 dsp on/off and send_values;
+#X connect 1 0 0 0;
+#X connect 2 0 0 1;
+#X connect 3 0 0 2;
+#X connect 6 0 0 3;
+#X connect 7 0 0 4;

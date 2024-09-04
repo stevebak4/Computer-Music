@@ -1,0 +1,55 @@
+#N canvas 687 336 450 300 12;
+#X obj 825 238 soundfiler;
+#X floatatom 861 263 12 0 0 0 - - -;
+#X obj 813 305 expr $f1/44100;
+#X obj 861 286 s sampleSize;
+#X msg 815 204 read -resize \$1 array1;
+#X obj 835 248 soundfiler;
+#X floatatom 871 273 12 0 0 0 - - -;
+#X obj 823 315 expr $f1/44100;
+#X obj 871 296 s sampleSize;
+#X msg 825 214 read -resize \$1 array1;
+#X obj 845 258 soundfiler;
+#X floatatom 881 283 12 0 0 0 - - -;
+#X obj 833 325 expr $f1/44100;
+#X obj 881 306 s sampleSize;
+#X msg 835 224 read -resize \$1 array1;
+#X obj 855 268 soundfiler;
+#X floatatom 891 293 12 0 0 0 - - -;
+#X obj 843 335 expr $f1/44100;
+#X obj 891 316 s sampleSize;
+#X msg 845 234 read -resize \$1 array1;
+#N canvas 0 50 450 250 (subpatch) 0;
+#X array array3 100 float 3;
+#A 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0;
+#X coords 0 1 100 -1 200 140 1;
+#X restore 193 104 graph;
+#X obj 48 122 soundfiler;
+#X floatatom 88 154 12 0 0 0 - - -;
+#X obj 36 189 expr $f1/44100;
+#X obj 60 15 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X msg 26 38 read -resise ./extracted/wav5.wav array3;
+#X connect 0 0 1 0;
+#X connect 0 0 2 0;
+#X connect 1 0 3 0;
+#X connect 4 0 0 0;
+#X connect 5 0 6 0;
+#X connect 5 0 7 0;
+#X connect 6 0 8 0;
+#X connect 9 0 5 0;
+#X connect 10 0 11 0;
+#X connect 10 0 12 0;
+#X connect 11 0 13 0;
+#X connect 14 0 10 0;
+#X connect 15 0 16 0;
+#X connect 15 0 17 0;
+#X connect 16 0 18 0;
+#X connect 19 0 15 0;
+#X connect 21 0 22 0;
+#X connect 21 0 23 0;
+#X connect 24 0 25 0;
+#X connect 25 0 21 0;
