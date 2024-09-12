@@ -1,6 +1,6 @@
 # Sound Envelope Extraction (ADSR)
 
-## Contents
+## Basic Contents
 
 - **Computer music - Input Team.pdf**  
   Slides for presenting the project.
