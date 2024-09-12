@@ -1,6 +1,27 @@
-# Sound Envelope Extraction and Frequency Categorization
+# Sound Envelope Extraction (ADSR)
 
 ## Contents
+
+- **Computer music - Input Team.pdf**  
+  Slides for presenting the project.
+
+- **Extracting ADSR.pdf**  
+  A technical document explaining the process of extracting ADSR envelopes from audio signals, including the algorithmic details and implementation.
+
+- **input_team.pd**  
+  A Pure Data patch file used to process and analyze the incoming sound data, implementing the core algorithms for envelope extraction and frequency analysis.
+
+- **pd_script.sh**  
+  A shell script that generates a list of .wav files to be analyzed by the Pure Data patches. This script automates the process of preparing audio files for analysis.
+
+- **record_analyse.pd**  
+  A Pure Data patch responsible for recording sound inputs (from .wav files or live microphone). This is a sub-patch called from input_team.pd.
+
+- **sounds.txt**  
+  A text file that lists the sound samples used in the project. These .wav files serve as inputs for the analysis and processing in Pure Data.
+
+- **characteristics.txt**  
+  A text file containing extracted sound characteristics, such as ADSR envelope values
  
 
 
