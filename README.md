@@ -1,9 +1,14 @@
 # Sound Envelope Extraction and Frequency Categorization
 
+## Contents
+ 
+
+
+
 ## 1. Introduction
 This project focuses on extracting sound envelopes and categorizing dominant frequencies within specific bands. A sound envelope consists of four stages: **Attack**, **Decay**, **Sustain**, and **Release** (ADSR). The input for the project is captured either from .wav files or live through a microphone, depending on a predefined decibel threshold that is dynamically adjusted in real-time based on amplitude variation. 
 
-Using **Fourier Analysis** and algorithmic techniques, the system processes each sample to determine its envelope characteristics, average amplitude, and dominant frequencies in selected bands. The results are presented as envelope values in milliseconds and categorized frequency data.
+The system processes each sample to determine its envelope characteristics and average amplitude. The results are presented as envelope values in milliseconds.
 
 ## 2. Tools
 
@@ -23,9 +28,6 @@ A shell script is utilized to generate a text file containing the list of .wav f
 
 ### 3.2 Decibel (Db) Threshold
 The threshold ensures that only sounds above a certain decibel level are recorded for analysis. The threshold is updated dynamically using the standard deviation of current and previous amplitude values.
-
-### 3.3 Fourier Transform
-A **Fourier Transform** decomposes a signal into its component frequencies. In this project, the **Fast Fourier Transform (FFT)** is used to categorize the dominant frequencies in different bands.
 
 ## 4. Explanation
 
