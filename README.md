@@ -27,7 +27,7 @@
 
 
 ## 1. Introduction
-This project focuses on extracting sound envelopes and categorizing dominant frequencies within specific bands. A sound envelope consists of four stages: **Attack**, **Decay**, **Sustain**, and **Release** (ADSR). The input for the project is captured either from .wav files or live through a microphone, depending on a predefined decibel threshold that is dynamically adjusted in real-time based on amplitude variation. 
+This project focuses on extracting sound envelopes from pre-recorder or live sound samples. A sound envelope consists of four stages: **Attack**, **Decay**, **Sustain**, and **Release** (ADSR). The input for the project is captured either from .wav files or live through a microphone, depending on a predefined decibel threshold that is dynamically adjusted in real-time based on amplitude variation. 
 
 The system processes each sample to determine its envelope characteristics and average amplitude. The results are presented as envelope values in milliseconds.
 
